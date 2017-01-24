@@ -11,7 +11,7 @@ SolvePOMDP is a Java program that solves Partially Observable Markov Decision Pr
 * POMDPs can be defined using Tony's POMDP file format, and the resulting solutions are represented by alpha vectors and policy graphs.
 
 # Building from source #
-SolvePOMDP comes with a Maven project configuration file. In order to generate an executable jar file, you only need to execute the command `mvn package`. The required libraries will be downloaded automatically from the Maven repositories. You can also import the project in your Eclipse workspace.
+SolvePOMDP comes with a Maven project configuration file. In order to generate an executable jar file, you only need to execute the command `mvn package`. The required libraries will be downloaded automatically from the Maven repositories. You can also import the project in your Eclipse workspace. Note that the Gurobi library file has not been included in the libs directory. This jar file can be found in your Gurobi installation directory.
 
 # Executable binaries #
 For executable binaries and a step-by-step guide we refer to the webpage of SolvePOMDP: http://erwinwalraven.nl/solvepomdp.
