@@ -52,6 +52,13 @@ public class POMDP {
 		this.observationFunction = observationFunction;
 		this.actionLabels = actionLabels;
 		this.b0 = b0;
+		
+		// compute min reward
+		for(int s=0; s<nStates; s++) {
+			for(int a=0; a<nActions; a++) {
+				minReward = Math.min(minReward, rewardFunction[s][a]);
+			}
+		}
 	}
 	
 	public int getNumStates() {

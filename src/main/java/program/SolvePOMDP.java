@@ -242,7 +242,7 @@ public class SolvePOMDP {
 	 * @param args first argument should be a filename of a .POMDP file
 	 */
 	public static void main(String[] args) {		
-		System.out.println("SolvePOMDP v0.0.1");
+		System.out.println("SolvePOMDP v0.0.2");
 		System.out.println("Author: Erwin Walraven");
 		System.out.println("Web: erwinwalraven.nl/solvepomdp");
 		System.out.println("Delft University of Technology");

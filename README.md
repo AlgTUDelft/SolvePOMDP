@@ -1,4 +1,4 @@
-SolvePOMDP v0.0.1   
+SolvePOMDP v0.0.2   
 Author: Erwin Walraven   
 Web: erwinwalraven.nl/solvepomdp   
 Delft University of Technology   
