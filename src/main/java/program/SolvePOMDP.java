@@ -25,11 +25,13 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.Properties;
+import java.util.Random;
 
 import pruning.PruneStandard;
 import pruning.PruneAccelerated;
 import pruning.PruneMethod;
 import solver.Solver;
+import solver.SolverApproximate;
 import solver.SolverExact;
 
 import lpsolver.LPGurobi;
@@ -158,7 +160,7 @@ public class SolvePOMDP {
 			this.solver = new SolverExact(sp, lp, pm);
 		}
 		else if(algorithmType.equals("perseus")) {
-			this.solver = null;
+			this.solver = new SolverApproximate(sp, new Random(222));
 		}
 		else {
 			throw new RuntimeException("Unexpected algorithm type in properties file");
@@ -242,7 +244,7 @@ public class SolvePOMDP {
 	 * @param args first argument should be a filename of a .POMDP file
 	 */
 	public static void main(String[] args) {		
-		System.out.println("SolvePOMDP v0.0.2");
+		System.out.println("SolvePOMDP v0.0.3");
 		System.out.println("Author: Erwin Walraven");
 		System.out.println("Web: erwinwalraven.nl/solvepomdp");
 		System.out.println("Delft University of Technology");
